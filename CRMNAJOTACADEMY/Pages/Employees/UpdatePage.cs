@@ -54,7 +54,7 @@ namespace CRMNAJOTACADEMY.Pages.Employees
 
                 Console.WriteLine($"(1) Ortga qaytish | (2) Dasturdan chiqish");
                 string st = Console.ReadLine();
-                if (st == "1") await AssistantsPage.RunAsync();
+                if (st == "1") await EmployeesPage.RunAsync();
                 else { }
             }
             else
@@ -65,7 +65,7 @@ namespace CRMNAJOTACADEMY.Pages.Employees
 
                 Console.WriteLine($"(1) Ortga qaytish | (2) Dasturdan chiqish");
                 string st = Console.ReadLine();
-                if (st == "1") await AssistantsPage.RunAsync();
+                if (st == "1") await EmployeesPage.RunAsync();
                 else { }
             }
         }

@@ -23,11 +23,6 @@ namespace CRMNAJOTACADEMY.Services
 
         public async Task<CourseViewModel> CreateAsync(Course entity)
         {
-            var course = (await GetAllAsync()).FirstOrDefault(p => p.Name == entity.Name);
-
-            if (course == null)
-                return null;
-
             return await ConvertToViewModel(await courseRepository.CreateAsync(entity));
         }
 

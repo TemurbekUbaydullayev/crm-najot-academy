@@ -10,11 +10,11 @@ namespace CRMNAJOTACADEMY.Pages
         {
             Console.Clear();
 
-            Console.WriteLine($"(1) Yangi xodim qo'shish");
-            Console.WriteLine($"(2) Barcha xodimlar ma'lumotlarini ko'rish");
-            Console.WriteLine($"(3) Biror xodim ma'lumotlarini ko'rish");
-            Console.WriteLine($"(4) Biror xodim ma'lumotlarini yangilash");
-            Console.WriteLine($"(5) Biror xodimni o'chirish");
+            Console.WriteLine($"(1) Yangi o'qituvchi qo'shish");
+            Console.WriteLine($"(2) Barcha o'qituvchilar ma'lumotlarini ko'rish");
+            Console.WriteLine($"(3) Biror o'qituvchi ma'lumotlarini ko'rish");
+            Console.WriteLine($"(4) Biror o'qituvchi ma'lumotlarini yangilash");
+            Console.WriteLine($"(5) Biror o'qituvchini o'chirish");
             Console.Write($">>> ");
 
             string str = Console.ReadLine();
