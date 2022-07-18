@@ -27,7 +27,7 @@ namespace CRMNAJOTACADEMY.Pages.Courses
                 consoleTable.AddRow(course.Id, course.Name, role, course.Salary, course.TeacherName, course.AssistantName, course.StartTime, course.EndTime);
                 consoleTable.Write();
 
-            Console.WriteLine($"(1) Ortga qaytish | (2) Dasturdan chiqish");
+                Console.WriteLine($"(1) Ortga qaytish | (2) Dasturdan chiqish");
                 string st = Console.ReadLine();
                 if (st == "1") await CoursesPage.RunAsync();
                 else { }

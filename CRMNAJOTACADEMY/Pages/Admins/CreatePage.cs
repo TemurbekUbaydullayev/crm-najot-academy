@@ -19,7 +19,7 @@ namespace CRMNAJOTACADEMY.Pages.Admins
             Console.Write("Admin ismi : ");
             admin.FirstName = Console.ReadLine();
             Console.Write($"{admin.FirstName}ning familiyasi : ");
-            admin.LastName = Console.ReadLine();            
+            admin.LastName = Console.ReadLine();
             Console.Write($"{admin.FirstName}ning yoshi : ");
             admin.Age = int.Parse(Console.ReadLine());
             Console.WriteLine("1. Erkak     2. Ayol");
@@ -31,7 +31,7 @@ namespace CRMNAJOTACADEMY.Pages.Admins
 
             var res = await adminService.CreateAsync(admin);
 
-            if(res != null)
+            if (res != null)
             {
                 Console.Clear();
 

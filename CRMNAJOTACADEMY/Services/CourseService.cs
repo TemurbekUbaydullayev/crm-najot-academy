@@ -22,9 +22,7 @@ namespace CRMNAJOTACADEMY.Services
         }
 
         public async Task<CourseViewModel> CreateAsync(Course entity)
-        {
-            return await ConvertToViewModel(await courseRepository.CreateAsync(entity));
-        }
+            => await ConvertToViewModel(await courseRepository.CreateAsync(entity));
 
         public async Task<bool> DeleteAsync(int id)
             => await courseRepository.DeleteAsync(id);

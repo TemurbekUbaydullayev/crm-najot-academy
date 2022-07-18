@@ -32,7 +32,7 @@ namespace CRMNAJOTACADEMY.Pages.Courses
             Console.WriteLine($"O'qituvchi Idsini kiriting : ");
 
             ConsoleTable consoleTableTeacher = new ConsoleTable("Id", "Ism Familiya", "Age", "Jinsi", "Telefon raqami", "Kurs turi", "Maosh");
-            foreach(var teacher in teachers)
+            foreach (var teacher in teachers)
             {
                 string gender = teacher.Gender == Gender.Male ? "Erkak" : "Ayol";
                 string role = teacher.RoleOfTeacher == Role.Bootcamp ? "Bootcamp" : "Foundation";
@@ -47,7 +47,7 @@ namespace CRMNAJOTACADEMY.Pages.Courses
             Console.WriteLine($"Assistent Id sini kiriting : ");
 
             ConsoleTable consoleTableAssistant = new ConsoleTable("Id", "Ism Familiya", "Age", "Jinsi", "Telefon raqami", "Kurs turi", "Maosh");
-            foreach(var assist in assistants)
+            foreach (var assist in assistants)
             {
                 string gender = assist.Gender == Gender.Male ? "Erkak" : "Ayol";
                 string role = assist.RoleOfAssistant == Role.Bootcamp ? "Bootcamp" : "Foundation";

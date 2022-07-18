@@ -1,9 +1,9 @@
-﻿using System;
-using ConsoleTables;
-using System.Threading.Tasks;
+﻿using ConsoleTables;
+using CRMNAJOTACADEMY.Enums;
 using CRMNAJOTACADEMY.Interfaces.Services;
 using CRMNAJOTACADEMY.Services;
-using CRMNAJOTACADEMY.Enums;
+using System;
+using System.Threading.Tasks;
 
 namespace CRMNAJOTACADEMY.Pages.Admins
 {
@@ -18,10 +18,10 @@ namespace CRMNAJOTACADEMY.Pages.Admins
             IAdminService adminService = new AdminService();
             var admins = await adminService.GetAllAsync();
 
-            foreach(var admin in admins)
+            foreach (var admin in admins)
             {
                 string gender = admin.Gender == Gender.Male ? "Erkak" : "Ayol";
-                consoleTable.AddRow(admin.Id, admin.FirstName+" "+admin.LastName, admin.Age, gender, admin.Phone);
+                consoleTable.AddRow(admin.Id, admin.FirstName + " " + admin.LastName, admin.Age, gender, admin.Phone);
             }
             consoleTable.Write();
 

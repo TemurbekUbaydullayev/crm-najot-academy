@@ -35,7 +35,7 @@ namespace CRMNAJOTACADEMY.Pages.Students
 
             ConsoleTable consoleTable = new ConsoleTable("Id", "Nomi", "Kurs turi", "Narxi", "O'qituvchi", "Assistent", "Boshlanish vaqti", "Tugash vaqti");
 
-            foreach(var course in courses)
+            foreach (var course in courses)
             {
                 string role = course.RoleOfCourse == Role.Bootcamp ? "Bootcamp" : "Foundation";
                 consoleTable.AddRow(course.Id, course.Name, role, course.Salary, course.TeacherName, course.AssistantName, course.StartTime, course.EndTime);

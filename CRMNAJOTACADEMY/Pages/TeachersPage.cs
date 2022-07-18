@@ -1,6 +1,6 @@
-﻿using System;
+﻿using CRMNAJOTACADEMY.Pages.Teachers;
+using System;
 using System.Threading.Tasks;
-using CRMNAJOTACADEMY.Pages.Teachers;
 
 namespace CRMNAJOTACADEMY.Pages
 {
